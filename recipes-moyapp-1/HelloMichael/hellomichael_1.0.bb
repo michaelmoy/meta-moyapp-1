@@ -7,6 +7,7 @@ DESCRIPTION = "Example Hello, Michael application for Yocto build."
 SECTION = "moyapp-1"
 DEPENDS = ""
 LICENSE = "MIT"
+<<<<<<< HEAD
 LIC_FILES_CHKSUM = "file:///home/michael/MoySandbox/yocto/HelloMichaelApp/LICENSE;md5=bf2017716e15e4e6b8b9301f3cb5384c"
 
 FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}-${PV}:"
@@ -17,6 +18,18 @@ SRCREV = "2fb43bb1bbb4f8617561d2893798068fca9fff7d"
 SRC_URI = "file:///home/michael/MoySandbox/yocto/HelloMichaelApp/"
 
 S = "${WORKDIR}/git"
+=======
+LIC_FILES_CHKSUM = "file://LICENSE;md5=bf2017716e15e4e6b8b9301f3cb5384c"
+
+FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}-${PV}:"
+
+# SRCREV = "b32a474f8953b0ddca178a8f78f7ae214d0986bf"
+SRCREV = "59e23e8c6925d4ff6f10aabce53ca02ce6668dbb"
+SRC_URI = "git://github.com/michaelmoy/YoctoHelloMichaelApp.git;branch=main"
+
+S = "${WORKDIR}/git"
+# S = "/home/michael/MoySandbox/yocto/YoctoHelloMichaelApp"
+>>>>>>> 6367112 (Original Art)
 
 
 # Pass arguments to linker
@@ -24,7 +37,11 @@ TARGET_CC_ARCH += "${LDFLAGS}"
 
 # Cross-compile source code
 do_compile() {
+<<<<<<< HEAD
     ${CC} -o hellomichael /home/michael/MoySandbox/yocto/HelloMichaelApp/HelloMichael.c
+=======
+    ${CC} -o hellomichael HelloMichael.c
+>>>>>>> 6367112 (Original Art)
 }
 
 # Create /usr/bin in rootfs and copy program to it
