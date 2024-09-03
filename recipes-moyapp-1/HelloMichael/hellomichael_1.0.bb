@@ -24,7 +24,7 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=bf2017716e15e4e6b8b9301f3cb5384c"
 FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}-${PV}:"
 
 # SRCREV = "b32a474f8953b0ddca178a8f78f7ae214d0986bf"
-SRCREV = "59e23e8c6925d4ff6f10aabce53ca02ce6668dbb"
+SRCREV = "3c501bf62019eb073dc3f75b44b66b8deacb8562"
 SRC_URI = "git://github.com/michaelmoy/YoctoHelloMichaelApp.git;branch=main"
 
 S = "${WORKDIR}/git"
