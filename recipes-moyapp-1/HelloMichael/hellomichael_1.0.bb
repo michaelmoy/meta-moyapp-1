@@ -25,7 +25,7 @@ FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}-${PV}:"
 
 # SRCREV = "b32a474f8953b0ddca178a8f78f7ae214d0986bf"
 SRCREV = "3c501bf62019eb073dc3f75b44b66b8deacb8562"
-SRC_URI = "git://github.com/michaelmoy/YoctoHelloMichaelApp.git;branch=main"
+SRC_URI = "https://github.com/michaelmoy/YoctoHelloMichaelApp.git;branch=main"
 
 S = "${WORKDIR}/git"
 # S = "/home/michael/MoySandbox/yocto/YoctoHelloMichaelApp"
